@@ -45,7 +45,7 @@ exports.loginUser = async ({ email, password }) => {
       process.env.JWT_SECRET,
       { expiresIn: '3h' }
     );   //jwt.sign(payload, secret, options)
-    console.log('Token generated:', token);
+    //console.log('Token generated:', token);
 
     return {
       status: 200,
